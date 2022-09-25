@@ -9,6 +9,7 @@
   --background: hsl(230, 17%, 14%);
   --pale-blue-pattern: hsl(232, 19%, 15%);
   --card-grayish-blue: hsl(228, 28%, 20%);
+  --card-hover: hsl(228deg 26% 27%);
   --text-grayish-blue: hsl(228, 34%, 66%);
   --text-dark-blue: hsl(0, 0%, 100%);
   --toggle: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%)); }
@@ -17,6 +18,7 @@
   --background: hsl(0, 0%, 100%);
   --pale-blue-pattern: hsl(225, 100%, 98%);
   --card-grayish-blue: hsl(227, 47%, 96%);
+  --card-hover: hsl(232deg 33% 91%);
   --text-grayish-blue: hsl(228, 12%, 44%);
   --text-dark-blue: hsl(230, 17%, 14%);
   --toggle: hsl(230, 22%, 74%); }
@@ -61,6 +63,11 @@ h3,
   font-size: 1rem;
   color: var(--text-grayish-blue); }
 
+.content-head {
+  font-size: 1.2rem;
+  line-height: 27.2px;
+  margin-bottom: 10px; }
+
 .heading {
   display: flex;
   flex-direction: column;
@@ -87,6 +94,8 @@ label {
   border-radius: 100vmax;
   background: var(--toggle);
   cursor: pointer; }
+  label:hover {
+    background: linear-gradient(#378fe6, #3eda82); }
 
 label::before {
   content: "";
@@ -138,10 +147,14 @@ input[type="checkbox"]:checked + .toggle::before {
   width: 100%;
   padding: 2rem 1rem 1.5rem;
   background-color: var(--card-grayish-blue);
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
+  .main-content .sub-content:hover,
+  .main-content .aside-content:hover {
+    background-color: var(--card-hover); }
 
 .main-content .sub-content-wrapper:nth-child(2) {
   background: var(--twitter); }
