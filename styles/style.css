@@ -93,6 +93,7 @@ label {
   height: 25px;
   border-radius: 100vmax;
   background: var(--toggle);
+  color: transparent;
   cursor: pointer; }
   label:hover {
     background: linear-gradient(#378fe6, #3eda82); }
@@ -107,7 +108,7 @@ label::before {
   border-radius: 50%;
   background: var(--pale-blue-pattern); }
 
-input[type="checkbox"]:checked + .toggle::before {
+input[type="checkbox"]:checked + label::before {
   left: 27px; }
 
 .main-content {
