@@ -1,0 +1,14 @@
+{
+  "name": "social-media-dashboard",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Challenge - A theme switcher social media dashboard",
+  "main": "index.js",
+  "scripts": {
+    "watch:scss": "node-sass -w styles/style.scss styles/style.css"
+  },
+  "author": "Michael Ajayi",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
